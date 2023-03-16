@@ -2,6 +2,8 @@
 
 A safety guaranteed neural network controller for autonomous systems 
 
+![pipeline](imgs/BarrierNet_model.jpg)  (![<tag>](<imgs/BarrierNet_model.jpg>)) 
+
 There are three simple control demos (traffic merging, 2D and 3D robot control) and one vision-based end-to-end autonomous driving demo.
 
 ## Setup
@@ -18,4 +20,15 @@ Install `vista`.
 $ conda activate bnet
 $ cd vista
 $ pip install -e .
+```
+
+Cite our work:
+```
+@article{xiao2023bnet,
+        title={BarrierNet: Differentiable Control Barrier Functions for Learning of Safe Robot Control},
+        author={Wei Xiao, Tsun-Hsuan Wang, Ramin Hasani, Makram Chahine, Alexander Amini, Xiao Li, and Daniela Rus},
+        journal={IEEE Transactions on Robotics},
+        year={2023},
+        publisher={IEEE}
+    }
 ```
