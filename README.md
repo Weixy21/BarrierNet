@@ -2,7 +2,7 @@
 
 A safety guaranteed neural network controller for autonomous systems 
 
-![pipeline](imgs/BarrierNet_model.jpg)  (![<tag>](<imgs/BarrierNet_model.jpg>)) 
+![pipeline](imgs/BarrierNet_model.jpg) 
 
 There are three simple control demos (traffic merging, 2D and 3D robot control) and one vision-based end-to-end autonomous driving demo.
 
