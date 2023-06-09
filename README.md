@@ -26,7 +26,7 @@ Cite our work:
 ```
 @article{xiao2023bnet,
         title={BarrierNet: Differentiable Control Barrier Functions for Learning of Safe Robot Control},
-        author={Wei Xiao, Tsun-Hsuan Wang, Ramin Hasani, Makram Chahine, Alexander Amini, Xiao Li, and Daniela Rus},
+        author={Wei Xiao and Tsun-Hsuan Wang and Ramin Hasani and Makram Chahine and Alexander Amini and Xiao Li and Daniela Rus},
         journal={IEEE Transactions on Robotics},
         year={2023},
         publisher={IEEE}
