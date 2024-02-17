@@ -22,7 +22,15 @@ $ cd vista
 $ pip install -e .
 ```
 
-Cite our work:
+Testing Vista (change the model/trace path to where the models/trace are located: lines 47 and 51 in eval_example.sh)
+Download Barrier_Net: https://drive.google.com/file/d/1vkBTsmFeh_c3qDkqCnKBi-S2pAFsj2q8/view?usp=drive_link
+Download state_net: https://drive.google.com/file/d/1bFFO6S4GYdSP3eCiStAg2orK9MXXoMWU/view?usp=drive_link
+Download testing trace: https://drive.google.com/file/d/1z3BN9DbDDc0o1qir7VF64Rf5t-4F6czW/view?usp=drive_link
+```
+$ python scripts/eval_example.ssh --trace-paths ./fakepath/20220113-131922_lexus_devens_outerloop_reverse --ckpt ./fakepath/epoch\=9-step\=29239.ckpt --state-net-ckpt ./fakepath/epoch=7-step=36374.ckpt
+```
+
+If you find this useful, please cite our work:
 ```
 @article{xiao2023bnet,
         title={BarrierNet: Differentiable Control Barrier Functions for Learning of Safe Robot Control},
