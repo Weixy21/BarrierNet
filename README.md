@@ -7,7 +7,6 @@ A safety guaranteed neural network controller for autonomous systems
 There are three simple control demos (traffic merging, 2D and 3D robot control) and one vision-based end-to-end autonomous driving demo.
 
 ## Setup
-
     ```
     $ conda create -n bnet python=3.8
     $ conda activate bnet
@@ -23,8 +22,8 @@ $ pip install -e .
 ```
 
 ## Testing vision-based driving in VISTA
-Download Barrier_Net: https://drive.google.com/file/d/1vkBTsmFeh_c3qDkqCnKBi-S2pAFsj2q8/view?usp=drive_link
-Download state_net: https://drive.google.com/file/d/1bFFO6S4GYdSP3eCiStAg2orK9MXXoMWU/view?usp=drive_link
+Download trained Barrier_Net: https://drive.google.com/file/d/1vkBTsmFeh_c3qDkqCnKBi-S2pAFsj2q8/view?usp=drive_link
+Download trained state_net: https://drive.google.com/file/d/1bFFO6S4GYdSP3eCiStAg2orK9MXXoMWU/view?usp=drive_link
 Download testing trace: https://drive.google.com/file/d/1z3BN9DbDDc0o1qir7VF64Rf5t-4F6czW/view?usp=drive_link
 ```
 $ bash scripts/eval_example.sh --trace-paths ./fakepath/20220113-131922_lexus_devens_outerloop_reverse --ckpt ./fakepath/epoch\=9-step\=29239.ckpt --state-net-ckpt ./fakepath/epoch=7-step=36374.ckpt
