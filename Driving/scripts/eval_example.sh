@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export PYTHONNOUSERSITE=True
+export PYOPENGL_PLATFORM=egl
+
 DATA_ROOT=$HOME/data/vista
 TRACE_ROOT=$DATA_ROOT/traces
 
