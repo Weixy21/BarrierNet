@@ -17,8 +17,16 @@ pip install qpth cvxpy cvxopt
 Install `vista`.
 ```
 conda activate bnet
-cd vista
+cd driving/vista
 pip install -e .
+```
+
+## Training vision-based driving in VISTA
+Download training data: https://drive.google.com/file/d/1cV9ByK0qGtRDv32uhPMqgRbQUP1hYQPZ/view?usp=drive_link
+```
+conda activate bnet
+cd driving
+bash scripts/run_example.sh --data-src ./your_path_to_data/data
 ```
 
 ## Testing vision-based driving in VISTA
