@@ -20,6 +20,8 @@ conda activate bnet
 cd driving/vista
 pip install -e .
 ```
+## Brief introduction to vision-based driving in VISTA
+There are two models in this example: barrier_net and state_net. The state_net is used to infer the states of the ego vehicle and obstacles from the image observations, and the barrier_net (using the predicted state from state_net model) predicts safe controls from image observations. The differentiable CBFs are implemented in barrier_net. You may adapt the corresponding safety constraints in your examples. For more details, please refer to the paper listed at the end.
 
 ## Training vision-based driving in VISTA
 Download training data: https://drive.google.com/file/d/1cV9ByK0qGtRDv32uhPMqgRbQUP1hYQPZ/view?usp=drive_link
@@ -40,6 +42,7 @@ Download carpack01 (for VISTA): https://drive.google.com/file/d/13ENk6GEKGUfIkVc
 ```
 bash scripts/eval_example.sh --trace-paths ./fakepath/20220113-131922_lexus_devens_outerloop_reverse --ckpt ./fakepath/version_5/checkpoints/epoch\=9-step\=29239.ckpt --state-net-ckpt ./fakepath/version_1/checkpoints/epoch=7-step=36374.ckpt --mesh-dir ./fakepath/carpack01/
 ```
+Note: if state_net is missing, then the barrier_net uses the ground truth states of the ego vehicle and obstacles (available in VISTA).
 
 ## Reference
 If you find this useful, please cite our work:
