@@ -24,7 +24,7 @@ pip install -e .
 There are two models in this example: barrier_net and state_net. The state_net is used to infer the states of the ego vehicle and obstacles from the image observations, and the barrier_net (using the predicted state from state_net model) predicts safe controls from image observations. The differentiable CBFs are implemented in barrier_net. You may adapt the corresponding safety constraints in your examples. For more details, please refer to the paper listed at the end.
 
 ## Training vision-based driving in VISTA
-Download training data: https://drive.google.com/file/d/1cV9ByK0qGtRDv32uhPMqgRbQUP1hYQPZ/view?usp=drive_link
+Download training data (change the path in train_split.csv, test_split.csv, and val_split.csv to your local path, otherwise, you may generate the csv files by yourself): https://drive.google.com/file/d/1cV9ByK0qGtRDv32uhPMqgRbQUP1hYQPZ/view?usp=drive_link
 ```
 conda activate bnet
 cd driving
