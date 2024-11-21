@@ -47,11 +47,14 @@ Note: if state_net is missing, then the barrier_net uses the ground truth states
 ## Reference
 If you find this useful, please cite our work:
 ```
-@article{xiao2023bnet,
-        title={BarrierNet: Differentiable Control Barrier Functions for Learning of Safe Robot Control},
-        author={Wei Xiao and Tsun-Hsuan Wang and Ramin Hasani and Makram Chahine and Alexander Amini and Xiao Li and Daniela Rus},
-        journal={IEEE Transactions on Robotics},
-        year={2023},
-        publisher={IEEE}
-    }
+@article{xiao2023barriernet,
+  title={Barriernet: Differentiable control barrier functions for learning of safe robot control},
+  author={Xiao, Wei and Wang, Tsun-Hsuan and Hasani, Ramin and Chahine, Makram and Amini, Alexander and Li, Xiao and Rus, Daniela},
+  journal={IEEE Transactions on Robotics},
+  volume={39},
+  number={3},
+  pages={2289--2307},
+  year={2023},
+  publisher={IEEE}
+}
 ```
